@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav,
+header,
+section,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@font-face {
+  src: url(https://fonts.google.com/specimen/Poppins?query=popp);
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #a7ede7;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigasi */
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Akhir Navigasi */
+
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 100px;
+  background-color: #a7ede7;
+}
+
+header div.kiri,
+header div.kanan {
+  width: 50%;
+  padding: 50px;
+}
+
+header div.kanan img {
+  background-size: cover;
+}
+.updown-animation {
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #6527be;
+}
+
+header div.kiri p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+header a {
+  text-align: center;
+  font-size: 1rem;
+  background: #9681eb;
+  color: #fff;
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+header a:hover {
+  background-color: #fff;
+  color: #9681eb;
+  text-decoration: none;
+}
+
+header p {
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+/* Akhir Header */
+
+/* About */
+section.about {
+  width: 100%;
+  position: relative;
+  background-color: #a7ede7;
+  text-align: center;
+  justify-content: center;
+  object-fit: cover;
+  padding: 50px;
+}
+
+.about div.kiri,
+.about div.kanan {
+  width: 50%;
+  padding: 20px;
+  background-color: #a7ede7;
+}
+
+section.about div.kiri img {
+  width: 500px;
+  height: 500px;
+}
+.updown-animation {
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+section.about h2 {
+  background-color: #a7ede7;
+  color: #6527be;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 60px;
+  width: 100%;
+}
+
+section.about h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.btn {
+  color: aliceblue;
+  background-color: #6527be;
+}
+.btn:hover {
+  color: #6527be;
+  background-color: aliceblue;
+}
+
+.form-label {
+  color: #6527be;
+}
+
+.form-text {
+  color: #6527be;
+}
+
+div.kanan p {
+  font-size: 1rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  text-indent: 50px;
+}
+/* Akhir About */
+
+/* Contact */
+section.contact {
+  width: 100%;
+  position: relative;
+  background-color: #a7ede7;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+section.kontak img {
+  background-size: cover;
+}
+.updown-animation {
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contact img {
+  width: 150px;
+  height: 150px;
+  margin-top: 100px;
+}
+
+.mb-3 {
+  margin: auto;
+  text-align: left;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* Akhir Contact */
+
+/* Footer */
+footer div.navigasi {
+  width: 100%;
+  display: flex;
+  background-color: #a7ede7;
+  justify-content: center;
+}
+
+footer p {
+  color: #6527be;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div.navigasi a:hover {
+  color: #fff;
+}
+/* Akhir Footer */
+
+/* Responsif Pada HP*/
+@media (max-width: 576px) {
+  header div.kiri,
+  header div.kanan {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header div.kanan img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  header div.kiri p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  section.about div.kiri,
+  section.about div.kan {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  section.about div.kiri img {
+    width: 300px;
+    height: 300px;
+}
+
+section.about h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+section.about div.kanan p {
+  font-size: 0.8rem;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-3 {
+  width: 300px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.btn {
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+}
